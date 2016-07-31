@@ -16,7 +16,14 @@ function getRandomQuote(quotes) {
 // replaces the html on the page with the html string of the random quote
 function printQuote() {
   quote = getRandomQuote(quotes);
-  htmlString = "<p class='quote'>" + quote.quote + "</p><p class='source'>" + quote.source + "<span class='citation'>" + quote.citation + "</span> <span class='year'>" + quote.year + "</span> </p>";
+  htmlString = "<p class='quote'>" + quote.quote + "</p><p class='source'>" + quote.source;
+  if (quote.citation) {
+  	htmlString += "<span class='citation'>" + quote.citation + "</span>"; 
+  }
+  if (quote.year) {
+  	htmlString += "<span class='year'>" + quote.year + "</span>"; 
+  }
+  htmlString += "</p>";
   document.getElementById('quote-box').innerHTML = htmlString;
 }
 
