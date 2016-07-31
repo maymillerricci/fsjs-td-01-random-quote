@@ -5,11 +5,11 @@ quotes = [
   	citation: "Braveheart", 
   	year: 1995
   },
-  { 
-  	quote: "I don't know who you are. I don't know what you want. If you are looking for ransom, I can tell you I don't have money. But what I do have are a very particular set of skills, skills I have acquired over a very long career. Skills that make me a nightmare for people like you.", 
-  	source: "Bryan Mills", 
-  	citation: "Taken", 
-  	year: 2008
+  {
+    quote: "I don't know who you are. I don't know what you want. If you are looking for ransom, I can tell you I don't have money. But what I do have are a very particular set of skills, skills I have acquired over a very long career. Skills that make me a nightmare for people like you.", 
+    source: "Bryan Mills", 
+    citation: "Taken", 
+    year: 2008
   },
   { 
   	quote: "After all, tomorrow is another day!", 
@@ -20,8 +20,7 @@ quotes = [
   { 
   	quote: "I'm not bad. I'm just drawn that way.", 
   	source: "Jessica Rabbit", 
-  	citation: "Who Framed Roger Rabbit", 
-  	year: 1988
+  	citation: "Who Framed Roger Rabbit"
   },
   { 
   	quote: "I'm the king of the world!", 
@@ -37,14 +36,13 @@ quotes = [
   },
   { 
   	quote: "Show me the money!", 
-  	source: "Jerry Maguire,", 
-  	citation: "Jerry Maguire,", 
+  	source: "Jerry Maguire", 
+  	citation: "Jerry Maguire", 
   	year: 1996
   },
   { 
     quote: "Love means never having to say you're sorry.", 
-    source: "Love Story", 
-    year: 1970
+    source: "Love Story"
   },
   { 
   	quote: "There's no crying in baseball!", 
@@ -60,8 +58,7 @@ quotes = [
   },
   { 
     quote: "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.", 
-    source: "Inigo Montoya.", 
-    citation: "The Princess Bride", 
+    source: "The Princess Bride", 
     year: 1987
   },
   { 
@@ -69,5 +66,27 @@ quotes = [
     source: "Rick Blaine", 
     citation: "Casablanca", 
     year: 1942
+  },
+  { 
+    quote: "There's no place like home.", 
+    source: "Dorothy Gale", 
+    citation: "Wizard of Oz", 
+    year: 1939
+  },
+  { 
+    quote: "I see dead people.", 
+    source: "Cole Sear", 
+    citation: "The Sixth Sense", 
+    year: 1999
+  },
+  { 
+    quote: "Carpe diem. Seize the day, boys. Make your lives extraordinary.", 
+    source: "John Keating", 
+    citation: "Dead Poets Society"
+  },
+  {  
+    quote: "Nobody puts Baby in a corner.", 
+    source: "Dirty Dancing", 
+    year: 1987
   }
 ];
