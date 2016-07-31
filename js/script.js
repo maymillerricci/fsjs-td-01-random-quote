@@ -1,6 +1,6 @@
 // event listener to respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById("loadQuote").addEventListener("click", printQuote, false);
 
 // returns a random integer from 0 to topNum
 function getRandomNumber(topNum) {
@@ -11,6 +11,15 @@ function getRandomNumber(topNum) {
 function getRandomQuote(quotes) {
 	randomNum = getRandomNumber(quotes.length);
 	return quotes[randomNum];
+}
+
+// changes the background color to a new random color
+function changeBackgroundColor() {
+	red = getRandomNumber(255);
+	green = getRandomNumber(255);
+	blue = getRandomNumber(255);
+	newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+  document.body.style["background-color"] = newColor;
 }
 
 // replaces the html on the page with the html string of the random quote
@@ -24,7 +33,8 @@ function printQuote() {
   	htmlString += "<span class='year'>" + quote.year + "</span>"; 
   }
   htmlString += "</p>";
-  document.getElementById('quote-box').innerHTML = htmlString;
+  document.getElementById("quote-box").innerHTML = htmlString;
+  changeBackgroundColor();
 }
 
 printQuote();
