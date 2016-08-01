@@ -1,9 +1,9 @@
 var quotes = [
   { 
-  	quote: "They may take our lives, but they'll never take our freedom!", 
-  	source: "William Wallace", 
-  	citation: "Braveheart", 
-  	year: 1995,
+    quote: "They may take our lives, but they'll never take our freedom!", 
+    source: "William Wallace", 
+    citation: "Braveheart", 
+    year: 1995,
     genre: "action"
   },
   {
@@ -14,38 +14,38 @@ var quotes = [
     genre: "action"
   },
   { 
-  	quote: "After all, tomorrow is another day!", 
-  	source: "Scarlett O'Hara", 
-  	citation: "Gone With the Wind", 
-  	year: 1939,
+    quote: "After all, tomorrow is another day!", 
+    source: "Scarlett O'Hara", 
+    citation: "Gone With the Wind", 
+    year: 1939,
     genre: "drama"
   },
   { 
-  	quote: "I'm not bad. I'm just drawn that way.", 
-  	source: "Jessica Rabbit", 
-  	citation: "Who Framed Roger Rabbit",
+    quote: "I'm not bad. I'm just drawn that way.", 
+    source: "Jessica Rabbit", 
+    citation: "Who Framed Roger Rabbit",
     genre: "comedy"
   },
   { 
-  	quote: "I'm the king of the world!", 
-  	source: "Jack Dawson", 
-  	citation: "Titanic", 
-  	year: 1997,
+    quote: "I'm the king of the world!", 
+    source: "Jack Dawson", 
+    citation: "Titanic", 
+    year: 1997,
     genre: "drama"
   },
   { 
-  	quote: "Roads? Where we're going we don't need roads.", 
-  	source: "Dr. Emmett Brown", 
-  	citation: "Back To The Future", 
-  	year: 1985,
+    quote: "Roads? Where we're going we don't need roads.", 
+    source: "Dr. Emmett Brown", 
+    citation: "Back To The Future", 
+    year: 1985,
     genre: "comedy",
     favorite: true
   },
   { 
-  	quote: "Show me the money!", 
-  	source: "Jerry Maguire", 
-  	citation: "Jerry Maguire", 
-  	year: 1996,
+    quote: "Show me the money!", 
+    source: "Jerry Maguire", 
+    citation: "Jerry Maguire", 
+    year: 1996,
     genre: "drama"
   },
   { 
@@ -54,17 +54,17 @@ var quotes = [
     genre: "drama"
   },
   { 
-  	quote: "There's no crying in baseball!", 
-  	source: "Jimmy Dugan", 
-  	citation: "A League of Their Own", 
-  	year: 1992,
+    quote: "There's no crying in baseball!", 
+    source: "Jimmy Dugan", 
+    citation: "A League of Their Own", 
+    year: 1992,
     genre: "drama"
   },
   { 
-  	quote: "To infinity and beyond!", 
-  	source: "Buzz Lightyear", 
-  	citation: "Toy Story", 
-  	year: 1995,
+    quote: "To infinity and beyond!", 
+    source: "Buzz Lightyear", 
+    citation: "Toy Story", 
+    year: 1995,
     genre: "comedy"
   },
   { 

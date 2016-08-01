@@ -7,7 +7,7 @@ var interval = setInterval(printQuote, 10000);
 
 // returns a random integer from 0 to topNum
 function getRandomNumber(topNum) {
-	return Math.floor(Math.random() * topNum);
+  return Math.floor(Math.random() * topNum);
 }
 
 // returns an array of integers from 0 to topNum
@@ -24,22 +24,22 @@ var numbersArray = makeRange(quotes.length);
 // returns a quote object at a randomly chosen index from the quotes array
 // but don't repeat until each one has been used
 function getNonRepeatingRandomQuote(quotes) {
-	if (numbersArray.length === 0 ) {
+  if (numbersArray.length === 0 ) {
     numbersArray = makeRange(quotes.length);
   }
   
-	var randomIndex = getRandomNumber(numbersArray.length);
-	var quote = quotes[numbersArray[randomIndex]];
+  var randomIndex = getRandomNumber(numbersArray.length);
+  var quote = quotes[numbersArray[randomIndex]];
   numbersArray.splice(randomIndex, 1);
   return quote;
 }
 
 // changes the background color to a new random color
 function changeBackgroundColor() {
-	var red = getRandomNumber(255);
-	var green = getRandomNumber(255);
-	var blue = getRandomNumber(255);
-	var newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+  var red = getRandomNumber(255);
+  var green = getRandomNumber(255);
+  var blue = getRandomNumber(255);
+  var newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
   document.body.style["background-color"] = newColor;
 }
 
@@ -48,16 +48,15 @@ function printQuote() {
   var quote = getNonRepeatingRandomQuote(quotes);
   var htmlString = "<p class='quote'>" + quote.quote + "</p><p class='source'>" + quote.source;
   if (quote.citation) {
-  	htmlString += "<span class='citation'>" + quote.citation + "</span>"; 
+    htmlString += "<span class='citation'>" + quote.citation + "</span>"; 
   }
   if (quote.year) {
-  	htmlString += "<span class='year'>" + quote.year + "</span>"; 
+    htmlString += "<span class='year'>" + quote.year + "</span>"; 
   }
   htmlString += "</p>";
   document.getElementById("quote-box").innerHTML = htmlString;
-  
   changeBackgroundColor();
-
+  
   clearInterval(interval);
   interval = setInterval(printQuote, 10000);
 }
