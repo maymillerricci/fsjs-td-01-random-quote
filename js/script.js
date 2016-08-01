@@ -23,7 +23,7 @@ var numbersArray = makeRange(quotes.length);
 
 // returns a quote object at a randomly chosen index from the quotes array
 // but don't repeat until each one has been used
-function getNonRepeatingRandomQuote(quotes) {
+function getRandomQuote(quotes) {
   if (numbersArray.length === 0 ) {
     numbersArray = makeRange(quotes.length);
   }
@@ -44,8 +44,10 @@ function changeBackgroundColor() {
 }
 
 // replaces the html on the page with the html string of the random quote
+// and changes the background color and resets the time interval
 function printQuote() {
-  var quote = getNonRepeatingRandomQuote(quotes);
+  var quote = getRandomQuote(quotes);
+
   var htmlString = "<p class='quote " + quote.genre;
   if (quote.favorite) {
     htmlString += " favorite";
