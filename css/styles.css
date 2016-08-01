@@ -22,6 +22,15 @@ body {
   font-size: 6rem;
   line-height: 2.5rem;
 }
+.quote.drama:before, .quote.drama:after {
+  color: black;
+}
+.quote.action:before, .quote.action:after {
+  color: red;
+}
+.quote.comedy:before, .quote.comedy:after {
+  color: gold;
+}
 .quote:before {
   content: "“";
   top: .25em;
