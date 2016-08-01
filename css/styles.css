@@ -17,7 +17,10 @@ body {
   line-height: 1.1;
   position: relative;
   margin-bottom: 0;
-  } 
+} 
+.quote.favorite {
+  font-weight: bold;
+}
 .quote:before, .quote:after {
   font-size: 6rem;
   line-height: 2.5rem;

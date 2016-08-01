@@ -46,7 +46,11 @@ function changeBackgroundColor() {
 // replaces the html on the page with the html string of the random quote
 function printQuote() {
   var quote = getNonRepeatingRandomQuote(quotes);
-  var htmlString = "<p class='quote " + quote.genre + "'>" + quote.quote + "</p><p class='source'>" + quote.source;
+  var htmlString = "<p class='quote " + quote.genre;
+  if (quote.favorite) {
+    htmlString += " favorite";
+  }
+  htmlString  += "'>" + quote.quote + "</p><p class='source'>" + quote.source;
   if (quote.citation) {
     htmlString += "<span class='citation'>" + quote.citation + "</span>"; 
   }
