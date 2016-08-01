@@ -9,14 +9,14 @@ function getRandomNumber(topNum) {
 
 // returns an array of integers from 0 to topNum
 function makeRange(topNum) {
-  range = []
-  for (i = 0; i < topNum; i++) {
+  var range = [];
+  for (var i = 0; i < topNum; i++) {
     range.push(i);
   }
   return range;
 }
 
-numbersArray = makeRange(quotes.length);
+var numbersArray = makeRange(quotes.length);
 
 // returns a quote object at a randomly chosen index from the quotes array
 // but don't repeat until each one has been used
@@ -25,25 +25,25 @@ function getNonRepeatingRandomQuote(quotes) {
     numbersArray = makeRange(quotes.length);
   }
   
-	randomIndex = getRandomNumber(numbersArray.length);
-	quote = quotes[numbersArray[randomIndex]];
+	var randomIndex = getRandomNumber(numbersArray.length);
+	var quote = quotes[numbersArray[randomIndex]];
   numbersArray.splice(randomIndex, 1);
   return quote;
 }
 
 // changes the background color to a new random color
 function changeBackgroundColor() {
-	red = getRandomNumber(255);
-	green = getRandomNumber(255);
-	blue = getRandomNumber(255);
-	newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+	var red = getRandomNumber(255);
+	var green = getRandomNumber(255);
+	var blue = getRandomNumber(255);
+	var newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
   document.body.style["background-color"] = newColor;
 }
 
 // replaces the html on the page with the html string of the random quote
 function printQuote() {
-  quote = getNonRepeatingRandomQuote(quotes);
-  htmlString = "<p class='quote'>" + quote.quote + "</p><p class='source'>" + quote.source;
+  var quote = getNonRepeatingRandomQuote(quotes);
+  var htmlString = "<p class='quote'>" + quote.quote + "</p><p class='source'>" + quote.source;
   if (quote.citation) {
   	htmlString += "<span class='citation'>" + quote.citation + "</span>"; 
   }

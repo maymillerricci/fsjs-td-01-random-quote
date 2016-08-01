@@ -1,4 +1,4 @@
-quotes = [
+var quotes = [
   { 
   	quote: "They may take our lives, but they'll never take our freedom!", 
   	source: "William Wallace", 
