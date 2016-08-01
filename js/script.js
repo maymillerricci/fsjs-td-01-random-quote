@@ -2,6 +2,9 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById("loadQuote").addEventListener("click", printQuote, false);
 
+// changes the quote every 10 seconds
+var interval = setInterval(printQuote, 10000);
+
 // returns a random integer from 0 to topNum
 function getRandomNumber(topNum) {
 	return Math.floor(Math.random() * topNum);
@@ -52,7 +55,11 @@ function printQuote() {
   }
   htmlString += "</p>";
   document.getElementById("quote-box").innerHTML = htmlString;
+  
   changeBackgroundColor();
+
+  clearInterval(interval);
+  interval = setInterval(printQuote, 10000);
 }
 
 printQuote();
